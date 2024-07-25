@@ -72,6 +72,25 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.custom-links-container {
+    display: flex;
+    flex-direction: column; /* Aligns links vertically */
+    gap: 10px; /* Space between links */
+    margin: 20px 0; /* Margin around the link container */
+	text-decoration: none; /* Remove underline from links */
+}
+
+.custom-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+    display: flex; /* Allows icon alignment */
+    align-items: center; /* Centers icon and text vertically */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+
+
 /* Basic */
 
 	html {
@@ -175,7 +194,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #7aaeace7;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1757,12 +1776,13 @@ input, select, textarea {
 		.image.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: clear;
 		}
 
 			.image.avatar48 img {
 				width: 48px;
 				height: 48px;
+				border-radius: 50%;
 			}
 
 		.image.fit {
@@ -1944,7 +1964,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		border-radius: 0.35em;
+		border-radius: 1em;
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
@@ -2105,7 +2125,7 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 0.9em;
 			line-height: 1em;
 		}
 
@@ -2169,7 +2189,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #8ebebc;
 					}
 
 /* Footer */

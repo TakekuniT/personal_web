@@ -1,0 +1,117 @@
+.circle_image {
+    border-radius: 50%;
+}
+
+#title a {
+    text-decoration: none !important;; /* Removes the underline */
+    border: none;
+  }
+
+
+.custom-links-container2 {
+    display: flex;
+    flex-direction: column; /* Aligns links vertically */
+    gap: 10px; /* Space between links */
+    margin: 20px 0; /* Margin around the link container */
+    align-items: center; /* Center the entire container */
+}
+
+.custom-link2 {
+    border: none; /* Removes any border */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Text color */
+    display: flex; /* Allows icon alignment */
+    align-items: center; /* Centers icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+    transition: color 0.3s; /* Smooth transition on hover */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make link take full width of the container */
+    max-width: 400px; /* Optional: Limit the maximum width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.link-text {
+    display: inline-block;
+    min-width: 100px; /* Adjust based on your needs */
+    text-align: right; /* Aligns the link text to the right */
+    margin-right: 10px; /* Space between the text and username */
+}
+
+.username {
+    flex: 1; /* Allows username to take the remaining space */
+}
+
+.image.featured2 {
+    display: block;
+    width: 40%;
+    margin: 2em 0 2em 0;
+    flex-shrink: 0;
+    
+}
+    .image.featured2 img {
+        border-radius: 30%;
+    }
+
+.container.about {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically centers items */
+    gap: 1em; /* Adds space between image and text */
+}
+
+.container.about .content {
+    display: flex; /* Make content flex container */
+    align-items: center; /* Align items vertically centered */
+    gap: 1em; /* Space between image and text */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.container.about p {
+    text-align: left; /* Align text to the left */
+    margin: 2em; /* Remove default margins */
+}
+
+
+.container.about p a {
+    color: #85bfa4e7;; /* Initial color of the link */
+    text-decoration: none; /* Removes underline from the link */
+    border: none; /* Removes border */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.container.about p a:hover {
+    color: #39a976e7; /* New color when hovered over */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+
+
+/* Resume Preview Button */
+.preview-button {
+    display: inline-block; /* Makes the link behave like a button */
+    padding: 10px 20px; /* Adds space inside the button */
+    font-size: 16px; /* Increases the font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #ffffff; /* Sets text color to white */
+    background-color: #4CAF50; /* Button background color */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Adds rounded corners */
+    text-align: center; /* Centers text */
+    text-decoration: none; /* Removes underline from the text */
+    transition: background-color 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.preview-button:hover {
+    background-color: #45a049; /* Darkens button on hover */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.preview-button:active {
+    background-color: #3e8e41; /* Further darkens button when clicked */
+}
+
+.preview-button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 150, 0, 0.8); /* Adds a custom focus outline */
+}
