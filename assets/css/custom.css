@@ -79,9 +79,63 @@
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .image.featured2 {
+        width: 80%; /* Make the image take more width on smaller screens */
+        margin: 1em 0; /* Adjust margin for smaller screens */
+    }
+
+    .container.about {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Align items to the start */
+    }
+
+    .container.about .content {
+        flex-direction: column; /* Stack content vertically */
+        gap: 0.5em; /* Reduce space between image and text */
+    }
+
+    .container.about p {
+        margin: 1em 0; /* Adjust margin for smaller screens */
+    }
+}
+
 .container.about p a:hover {
     color: #39a976e7; /* New color when hovered over */
     text-decoration: underline; /* Optional: underline on hover */
+}
+
+
+.container.project {
+    display: flex; /* Enables Flexbox layout */
+    align-items: flex-start; /* Aligns items at the start (top) */
+    gap: 2em; /* Adds space between project items */
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    justify-content: center; /* Align items to the start (center) */
+}
+
+.prj {
+    flex: 0 1 40%; /* Grow to fit available space, with a base width of 30% */
+    position: relative; /* Allows for positioning of child elements */
+    background-color: white; /* White background for each project item */
+    border-radius: 20px; /* Rounded corners: top-left, top-right, bottom-right, bottom-left */
+    padding: 1em; 
+}
+
+.prj img {
+    width: 100%; /* Image fills the width of the project container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes any extra space below the image */
+    object-fit: cover; /* Ensures the image covers the container area */
+    border-radius: 10px; /* Match border-radius with .project */
+}
+
+.container.project .content {
+    display: flex; /* Make content flex container */
+    align-items: center; /* Align items vertically centered */
+    gap: 1em; /* Space between image and text */
+    flex-wrap: wrap; /* Allows wrapping if needed */
 }
 
 
@@ -114,4 +168,47 @@
 .preview-button:focus {
     outline: none; /* Removes the default focus outline */
     box-shadow: 0 0 5px rgba(0, 150, 0, 0.8); /* Adds a custom focus outline */
+}
+
+
+
+.button-container {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically centers items */
+    gap: 2em; /* Adds space between buttons */
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.button-container a {
+    display: inline-flex; /* Use flexbox for button layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 1em; /* Rounded corners for buttons */
+    text-align: center; /* Center text within buttons */
+    border: none;
+    font-size: small;
+    width: 5em; /* Set a fixed width for buttons */
+    height: 1.5em; /* Set a fixed height for buttons */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.demo {
+    background-color: #9bd0da; /* Background color for demo button */
+    color: white; /* Text color for demo button */
+}
+
+.demo:hover {
+    background-color: #77abb5; /* Darker background on hover */
+    color: #e0e0e0; /* Lighter text color on hover */
+}
+
+.view {
+    background-color: #9bafd4; /* Background color for view button */
+    color: white; /* Text color for view button */
+}
+
+.view:hover {
+    background-color: rgb(116, 126, 168); /* Darker background on hover */
+    color: #d0d0d0; /* Lighter text color on hover */
 }
